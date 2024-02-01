@@ -9,8 +9,8 @@ def sum_of_products(list1, list2):
 
 if __name__ == '__main__':
    #REMOVE PASS AND YOUR CODE GOES HERE
-    int1 = int(input("Give a list of numbers:"))
-    int2 = int(input("Give a second list of numbers (the same length as the first):"))
+    int1 = int(input())
+    int2 = int(input())
     str1 = str(int1)
     str2 = str(int2)
     if len(str1) < len(str2) or len(str1) > len(str2):
