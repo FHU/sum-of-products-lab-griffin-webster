@@ -1,24 +1,15 @@
-#REMOVE PASS AND FIX THE FUNCTION
-#change to test push and forks
-
-import operator 
-
 def sum_of_products(list1, list2):
-    result = list(map(operator.mul, list1, list2))
-    return sum(result)
+    sum = 0
+    for i in range(len(list1)):
+        sum += int(list1[i]) * int(list2[i])
+    return sum
 
 if __name__ == '__main__':
-   #REMOVE PASS AND YOUR CODE GOES HERE
-    int1 = int(input().split())
-    int2 = int(input().split())
-    str1 = str(int1)
-    str2 = str(int2)
-    if len(str1) < len(str2) or len(str1) > len(str2):
-        print("Error")
-    else:
-        pass
-    list1 = list(map(int, str(int1)) )
-    list2 = list(map(int, str(int2)) )
-    sum_of_products(list1, list2)
+    list1 = (input().split())
+    list2 = (input().split())
 
-print(sum_of_products(list1, list2))
+    if len(list1) != len(list2):
+        print("Error")
+
+    if len(list1) == len(list2):
+        print(sum_of_products(list1, list2))
